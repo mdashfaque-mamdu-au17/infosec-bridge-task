@@ -24,6 +24,10 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 img,
 picture,
@@ -51,4 +55,76 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+
+/* main container */
+.main-container {
+  max-width: 428px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* logo */
+.logo {
+  width: 198px;
+  height: 198px;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 318px;
+}
+
+.header-container p {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* tabs section */
+.tabs-section {
+  padding-top: 52px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.single-tab-container {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.underline {
+  height: 3px;
+  width: 100%;
+  background-color: #e70b89;
+}
+
+.single-tab-container a {
+  color: #1d2226;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.single-tab-container .active {
+  font-weight: 700;
+}
+@media screen and (min-width: 656px) {
+  .tabs-section {
+    width: 428px;
+  }
+
+  .underline {
+    width: 188px;
+  }
 }
