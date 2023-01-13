@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Logo from './assets/react-logo.png';
 import Header from './components/Header';
 import Tabs from './components/Tabs';
+import Form from './components/Form';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -9,6 +10,7 @@ function App() {
     <div className="main-container">
       <Header />
       <Tabs />
+      <Form />
     </div>
   );
 }
