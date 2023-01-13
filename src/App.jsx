@@ -1,16 +1,15 @@
-import { useState } from 'react';
-import Logo from './assets/react-logo.png';
+import React from 'react';
 import Header from './components/Header';
 import Tabs from './components/Tabs';
 import Form from './components/Form';
+import SocialLogins from './components/SocialLogins';
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="main-container">
       <Header />
       <Tabs />
       <Form />
+      <SocialLogins />
     </div>
   );
 }
